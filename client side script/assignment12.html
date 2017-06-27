@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>variable</title>
+	<script>
+
+var n="apple";//global
+
+function variable(){
+
+document.write("<h1>Global</h1>")
+
+document.write(n + " inside function <br><br>");
+
+}
+
+variable();
+
+document.write(n + " outside function <br> <br> <br>");
+
+document.write("<h1>Local</h1>");
+
+function scope(){
+
+var s="apple";//local
+
+document.write(s + " inside function <br> <br>");
+
+
+}
+
+scope();
+
+document.write(s + " outside function");
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

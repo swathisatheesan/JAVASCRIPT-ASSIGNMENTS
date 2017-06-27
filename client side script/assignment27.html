@@ -1,0 +1,45 @@
+
+<html>
+<head>
+  <title>Forms</title>
+
+  <script>
+
+  function myfunction()
+  {
+    var welcome_para=document.getElementById("welcome");
+    var fastname=document.getElementById("first_name");  
+    var lastname=document.getElementById("last_name");
+    var email_id=document.getElementById("email_id");
+    welcome_para.innerHTML="welcome " + fastname.value+" "+lastname.value+". My email id is "+email_id.value;
+  }
+  
+
+  </script>
+</head>
+
+<body>
+  <form name="form_reg" action="https://www.google.co.in" method="get">
+  
+    <table width="50%" border="0" cellpadding="5px">
+    <tr>
+      <td>First Name: <input type="text" id="first_name"></td>
+    </tr>
+    <tr>
+      <td>Last Name: <input type="text" id="last_name"></td>
+    </tr>
+    <tr>
+      <td>Email Id: <input type="text" id="email_id"></td>
+    </tr> 
+    <tr>
+      <td>Password: <input type="password" id="txt_password"></td>
+  </tr>
+  <tr>
+      <td><input type="button" value="Sign Up" id="button" onclick="myfunction();"></td>
+  </tr>
+</table>
+</form>
+
+<p id="welcome"></p>
+</body>
+</html>

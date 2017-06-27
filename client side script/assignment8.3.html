@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Onchange</title>
+	<script>
+
+function myfunction()
+{
+ document.write("you selected a new car");
+
+
+}
+
+	</script>
+</head>
+<body>
+ <p>Select a car from the list.</p><br>
+
+
+ <select name="cars" onchange="myfunction()">
+
+ 	<option value="Audi" selected>Audi</option>
+ 		<option>BMW</option>
+ 			<option>Mercedes</option>
+ 				<option>Volvo</option>
+ 					
+ </select>
+
+</body>
+</html>
