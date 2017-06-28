@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>check box validation</title>
+
+	<script>
+
+	function is_checked()
+	{ 
+		
+		var graduate=document.getElementById("check_grad").checked;
+		var post_graduate=document.getElementById("check_post_grad").checked;
+
+		if(graduate==false && post_graduate==false)
+		{
+		
+			var str = "please choose your qualification";
+			document.getElementById("error_check_box").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("error_check_box").innerHTML=null;
+		}
+	}
+	</script>
+
+	<style>
+	#table{
+		background-color: #99ffff;
+		border:1px solid #99ffff;
+	}
+	</style>
+</head>
+
+<body>
+	<form name="form_reg" action="" method="get">
+	<table id="table" border="0" cellpadding="10px" cellspacing="10px" width="30%">
+	<tr>
+		<th colspan="2" align="center"><font size="5px">Check Box Validation</font></th>
+	<tr>
+			<td>Qualification : </td>
+			<td><input type="checkbox" id="check_grad"> Graduate
+  				<input type="checkbox" id="check_post_grad">Post Graduate
+  			</td>
+  	</tr>
+  	<tr>
+  		<td></td>
+  		<td><label id="error_check_box" style="color:red"></label></td>
+	<tr>	
+		<td></td>
+		<td><input type="button" value="Submit" id="button" onclick="is_checked();"/></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

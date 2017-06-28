@@ -1,0 +1,131 @@
+
+<html>
+<head>
+	<title>validations</title>
+	<script>
+
+	function validate()
+	{
+		var u_name=document.getElementById("txt_username").value;
+
+		if(u_name=="")
+		{
+		
+			var str = "Enter your name";
+			document.getElementById("name_error").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("name_error").innerHTML=null;
+		}
+		var address=document.getElementById("txt_address").value;
+		if(address=="")
+		{
+		
+			var str = "Enter your address";
+			document.getElementById("address_error").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("address_error").innerHTML=null;
+		}
+		var email=document.getElementById("txt_email").value;
+		if(email=="")
+		{
+		
+			var str = "Enter a valid email";
+			document.getElementById("email_error").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("email_error").innerHTML=null;
+		}
+
+		var mobile=document.getElementById("txt_mobile").value;
+		if(mobile=="")
+		{
+		
+			var str = "Enter your mobile";
+			document.getElementById("mob_error").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("mob_error").innerHTML=null;
+		}
+		var p_word=document.getElementById("txt_password").value;
+		if(p_word=="")
+		{
+		
+			var str = "Enter your password";
+			document.getElementById("pass_error").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("pass_error").innerHTML=null;
+		}
+		var conf_pword=document.getElementById("txt_password_confirm").value;
+		if(conf_pword=="")
+		{
+		
+			var str = "Re-enter password";
+			document.getElementById("con_pass_error").innerHTML=str;
+		}
+		else
+		{
+			document.getElementById("con_pass_error").innerHTML=null;
+		}
+	}
+	</script>
+
+	<style>
+	#table{
+		background-color: #99ffff;
+		border:1px solid #99ffff;
+	}
+	</style>
+
+</head>
+
+<body>
+	<form name="form_reg" action="" method="get">
+	<table id="table" border="0" cellpadding="10px" cellspacing="10px" width="50%">
+	<tr>
+		<th colspan="2" align="center"><font size="5px">Student Registration Form</font></th>
+	<tr>
+		<td>Name</td>
+		<td><input type="text" id="txt_username" size="40px"/></td>
+		<td><label id="name_error" style ="color:red"></label></td>
+	</tr>
+	<tr>
+		<td>Personal Address</td>
+	 	<td><input type="text" id="txt_address" size="40px"/></td>
+	 	<td><label id="address_error" style ="color:red"></label></td>
+	</tr>
+	<tr>
+		<td>Email id</td>
+		<td><input type="text" id="txt_email" size="40px"/></td>
+		<td><label id="email_error" style ="color:red"></label></td>
+	</tr>
+	<tr>	
+		<td>Mobile No</td>
+		<td><input type="text" id="txt_mobile" size="40px"/></td>
+		<td><label id="mob_error" style ="color:red"></label></td>
+	</tr>
+	<tr>	
+		<td>Password </td>
+		<td><input type="text" id="txt_password" size="40px"/></td>
+		<td><label id="pass_error" style ="color:red"></label></td>
+	</tr>
+	<tr>	
+		<td>confirm Password</td>
+		<td><input type="text" id="txt_password_confirm" size="40px"/></td>
+		<td><label id="con_pass_error" style ="color:red"></label></td>
+	</tr>
+	<tr>	
+		<td></td>
+		<td><input type="button" value="Submit Form" id="button" onclick="validate();"/></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

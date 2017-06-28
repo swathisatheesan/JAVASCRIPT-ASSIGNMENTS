@@ -1,0 +1,34 @@
+
+<html>
+<head>
+	<title>Form submission</title>
+
+	<script>
+
+	function login()
+	{
+		var u_name=document.getElementById("txt_username").value;
+		var p_word=document.getElementById("txt_password").value;	
+		if((u_name=="admin")&&(p_word=="admin123"))
+		{
+
+		document.write("Login Successfull");
+		}
+		else{
+			document.write("Invalid Login Credentials");
+		}
+	}
+	
+
+	</script>
+</head>
+
+<body>
+	<form name="form_reg" action="" method="get">
+	
+	Username : <input type="text" id="txt_username"/>
+	Password : <input type="text" id="txt_password"/>
+		
+	<input type="button" value="login" id="button" onclick="login();"/>
+</body>
+</html>
