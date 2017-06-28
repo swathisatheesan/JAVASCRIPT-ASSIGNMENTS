@@ -7,11 +7,11 @@
 	function change(){
 		var image=document.getElementById('desktop');
 		if(image_tracker=='f'){
-		image.src="des.jpg";
+		image.src="des.JPG";
        image_tracker='d';
 	}else{
 
-		image.src="flow.jpg";
+		image.src="flow.JPG";
 		image_tracker='f';
 	}
 }
@@ -20,6 +20,6 @@ var timer=setInterval('change()',2000);
 	</script>
 </head>
 <body>
-<img src="flow.jpg" alt="desktop logo" id="desktop" onclick="clearInterval(timer)">
+<img src="flow.JPG" alt="desktop logo" id="desktop" onclick="clearInterval(timer)">
 </body>
 </html>
